@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Basic&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="tit">
+            <h1 class="title" id="title">Queue Management System</h1>
+            <p>Manage customers quickly and efficiently</p>
+        </div>
+        <div class="option" id="option">
+            <!-- From Uiverse.io by alexruix --> 
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="now">
+        <div class="nowdetails">
+            <h2>Now Serving</h2>
+        </div>
+        <div class="details">
+            <table class="table">
+                <tr>
+                    <th class="th2">Number</th>
+                    <th class="th1">Name</th>
+                    <th class="th2">Reason</th>
+                    
+                </tr>
+
+                <tr>
+                    <td class="nowno" id="nowno">0000</td>
+                    <td class="nowname" id="nowname">Kamal addaraarachchi</td>
+                    <td class="nowreson" id="nowreson">meet doctor</td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+
+    </div>
+        <button class="serve" id="serve">serve</button>
+
+    <div class="addperson">
+        <h2>Add Person</h2>
+        <div class="tb">
+        <table class="addnew">
+            <tr>
+                <td class="addn">Person's Name :</td>
+                <td class="adname"><input type="text" id="inputr" placeholder="...Enter Reason..."></td>
+            </tr>
+
+            <tr>
+                <td class="addr">Reason :</td>
+                <td class="adr" id="adr"><input type="text" id="inputr" placeholder="...Enter Reason..."></td>
+            </tr>
+        </table>
+
+        <button class="addq" onclick="getNameReson()">Add Queue</button>
+        </div>
+    </div>
+    
+    <h2>Current Queue </h2>
+    <div class="queuelist" id="queuelist">
+        
+    </div>
+
+</body>
+</html>
